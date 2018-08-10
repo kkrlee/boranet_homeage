@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="shortcut icon" href="style/images/favicon.png">
-<title>Malefic</title>
+<link rel="shortcut icon" href="boranet_logo3.png">
+<title>BORANET</title>
 <link rel="stylesheet" type="text/css" href="style/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="style/css/plugins.css">
 <link rel="stylesheet" type="text/css" href="style/revolution/css/settings.css">
@@ -15,6 +15,121 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" type="text/css" href="style/css/color/green.css">
 <link rel="stylesheet" type="text/css" href="style/type/icons.css">
+
+
+
+<style type="text/css">
+
+   #captcha {
+    width: 35%;
+    position: relative;
+    left: -19%;
+    bottom: 50%;
+    padding: 15px;
+    border: 2px solid #333333;
+    margin: 21px;
+    outline: 0;
+    color: #666;
+    font-size: 17px;
+    transform: translateX(-50%) translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+@media (max-width:994px){
+   #captcha {
+    width: 25%;
+    position: relative;
+    left: 13%;
+    bottom: 50%;
+    margin: 22px;
+    padding: 19px;
+    border: 2px solid #333333;
+    outline: 0;
+    color: #666;
+    font-size: 17px;
+    transform: translateX(-50%) translateY(-50%);
+    transition: all 0.3s ease;
+}
+}
+#captcha.correct {
+   border-color: #009688;
+}
+
+
+
+         .katitle {
+
+
+
+         color: #f36904;
+
+
+
+         }
+
+
+
+         .kkapromotion {
+
+
+
+         color: #000;
+
+
+
+         }
+
+
+
+         .mkcontact {
+
+
+
+         color: #f36904;
+
+
+
+         }
+
+
+
+         .mktitle {
+
+
+
+         color: #f36904;
+
+
+
+         }
+
+
+
+         .mkroom {
+
+
+
+         color: #000;
+
+
+
+         }
+
+
+
+         .mkp {
+
+
+
+         color: #fff;
+
+
+
+         }
+
+
+
+      </style>
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -28,7 +143,7 @@
     <div class="container">
       <div class="navbar-inner">
         <div class="navbar-header">
-          <div class="navbar-brand"><a href="index.html"><img src="#" srcset="style/images/boranet.png 1x, style/images/logo@2x.png 2x" alt="" /></a></div>
+          <div class="navbar-brand"><a href="index.html"><img src="#" srcset="boranet_logo3.png" alt="" /></a></div>
           <div class="nav-bars-wrapper">
             <div class="nav-bars-inner">
               <div class="nav-bars" data-toggle="collapse" data-target=".navbar-collapse"><span></span></div>
@@ -39,20 +154,23 @@
         </div>
         <!-- /.nav-header -->
 
-        <div class="navbar-collapse collapse">
+       <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#home">Home</a> </li>
+            <li><a href="index.html">Home</a> </li>
             <li><a href="#services">Services</a> </li>
             <li><a href="#portfolio">Portfolio</a> </li>
-            <li><a href="#about">About Us</a> </li>
-            <li><a href="#contact">Contact Us</a> </li>
+            <li><a href="#about">About</a> </li>
+            <li><a href="#contact">Contact</a> </li>
             <li><a href="#">Blog <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="blog/blog_gridview.php">Grid View</a></li>
-                <li><a href="blog/blog_postview.php">Blog Post</a></li>
+         
+                <li><a href="blog/blog_postview.php">Blog List</a></li>
               </ul>
             </li>
 
+<!--
+            <li><a href="#">Features <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="elements.html">Elements</a></li>
                 <li><a href="headings.html">Headings</a></li>
@@ -67,7 +185,7 @@
                 <li><a href="icon-fontawesome.html">Font Awesome</a></li>
                 <li><a href="icon-budicon.html">Budicon</a></li>
               </ul>
-            </li>
+            </li>-->
           </ul>
         </div>
         <!--/.nav-collapse -->
@@ -83,177 +201,165 @@
       <div class="rev_slider_wrapper fullscreen-container">
         <div id="slider" class="rev_slider fullscreenbanner" data-version="5.4.1">
           <ul>
-            <li data-transition="parallaxtoright" data-fstransition="fade"><img src="style/images/art/slider-bg1.jpg" alt="" />
+            <li data-transition="parallaxtoright" data-fstransition="fade"><img src="img/seo.jpg" alt="" />
               <div class="tp-caption light text-center"
-	        data-x="center"
-			data-y="middle"
-			data-voffset="['-35','-35','-35','-30']"
-			data-fontsize="['55','55','45','30']"
-			data-lineheight="['65','65','55','45']"
-			data-width="['1100','980','700','450']"
-			data-textAlign="['center','center','center','center']"
-			data-whitespace="['normal','normal','normal','normal']"
-			data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":1000,"frame":"999","to":"y:[175%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
-			data-responsive="on"
-			data-responsive_offset="on"
-			style="z-index: 9;">ONLINE MARKETING</div>
+           data-x="center"
+         data-y="middle"
+         data-voffset="['-35','-35','-35','-30']"
+         data-fontsize="['55','55','45','30']"
+         data-lineheight="['65','65','55','45']"
+         data-width="['1100','980','700','450']"
+         data-textAlign="['center','center','center','center']"
+         data-whitespace="['normal','normal','normal','normal']"
+         data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":1000,"frame":"999","to":"y:[175%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+         data-responsive="on"
+         data-responsive_offset="on"
+         style="z-index: 9;color:black;">ONLINE MARKETING</div>
               <div class="tp-caption light text-center"
-			data-x="center"
-			data-y="middle"
-			data-voffset="['35','35','35','30']"
-			data-fontsize="['55','55','45','30']"
-			data-lineheight="['65','65','55','45']"
-			data-width="['1100','980','700','450']"
-			data-textAlign="['center','center','center','center']"
-			data-whitespace="['normal','normal','normal','normal']"
-			data-frames='[{"delay":1500,"speed":2000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":1000,"frame":"999","to":"y:[175%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
-			data-responsive="on"
-			data-responsive_offset="on"
-			style="z-index: 9;">High Search Engine Ranking Service</div>
+         data-x="center"
+         data-y="middle"
+         data-voffset="['35','35','35','30']"
+         data-fontsize="['55','55','45','30']"
+         data-lineheight="['65','65','55','45']"
+         data-width="['1100','980','700','450']"
+         data-textAlign="['center','center','center','center']"
+         data-whitespace="['normal','normal','normal','normal']"
+         data-frames='[{"delay":1500,"speed":2000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":1000,"frame":"999","to":"y:[175%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+         data-responsive="on"
+         data-responsive_offset="on"
+         style="z-index: 9;color:black;">High Search Engine Ranking Service</div>
             </li>
-            <li data-transition="parallaxtoleft"><img src="style/images/art/slider-bg2.jpg" alt="" />
+            <li data-transition="parallaxtoleft"><img src="img/google.jpg" alt="" />
               <div class="tp-caption light text-center"
-			data-x="center"
-			data-y="middle"
-			data-voffset="['-35','-35','-35','-30']"
-			data-fontsize="['55','55','45','30']"
-			data-lineheight="['65','65','55','45']"
-			data-width="['1100','980','700','450']"
-			data-textAlign="['center','center','center','center']"
-			data-whitespace="['normal','normal','normal','normal']"
-			data-frames='[{"from":"x:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":1000,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
-			data-responsive="on"
-			data-responsive_offset="on"
-			style="z-index: 9;">ONLINE MARKETING</div>
+         data-x="center"
+         data-y="middle"
+         data-voffset="['-35','-35','-35','-30']"
+         data-fontsize="['55','55','45','30']"
+         data-lineheight="['65','65','55','45']"
+         data-width="['1100','980','700','450']"
+         data-textAlign="['center','center','center','center']"
+         data-whitespace="['normal','normal','normal','normal']"
+         data-frames='[{"from":"x:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":1000,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+         data-responsive="on"
+         data-responsive_offset="on"
+         style="z-index: 9;">ONLINE MARKETING</div>
               <div class="tp-caption light text-center"
-			data-x="center"
-			data-y="middle"
-			data-voffset="['35','35','35','30']"
-			data-fontsize="['55','55','45','30']"
-			data-lineheight="['65','65','55','45']"
-			data-width="['1100','980','700','450']"
-			data-textAlign="['center','center','center','center']"
-			data-whitespace="['normal','normal','normal','normal']"
-			data-frames='[{"from":"x:50px;opacity:0;","speed":1000,"to":"o:1;","delay":1500,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
-			data-responsive="on"
-			data-responsive_offset="on"
-			style="z-index: 9;">Google Optimized Website Development</div>
+         data-x="center"
+         data-y="middle"
+         data-voffset="['35','35','35','30']"
+         data-fontsize="['55','55','45','30']"
+         data-lineheight="['65','65','55','45']"
+         data-width="['1100','980','700','450']"
+         data-textAlign="['center','center','center','center']"
+         data-whitespace="['normal','normal','normal','normal']"
+         data-frames='[{"from":"x:50px;opacity:0;","speed":1000,"to":"o:1;","delay":1500,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+         data-responsive="on"
+         data-responsive_offset="on"
+         style="z-index: 9;">Google Optimized Website Development</div>
             </li>
             <li data-transition="parallaxtobottom"><img src="style/video/office.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina="" />
               <div class="rs-background-video-layer"
-	        data-forcerewind="on"
-		    data-volume="mute"
-			data-videowidth="100%"
-			data-videoheight="100%"
-			data-videomp4="style/video/office.mp4"
-			data-videopreload="preload"
-			data-videoloop="none"
-			data-forcecover="1"
-			data-aspectratio="16:9"
-			data-autoplay="true"
-			data-autoplayonlyfirsttime="false"
-			data-nextslideatend="true"
-			data-dottedoverlay="darkoverlay"></div>
+           data-forcerewind="on"
+          data-volume="mute"
+         data-videowidth="100%"
+         data-videoheight="100%"
+         data-videomp4="style/video/office.mp4"
+         data-videopreload="preload"
+         data-videoloop="none"
+         data-forcecover="1"
+         data-aspectratio="16:9"
+         data-autoplay="true"
+         data-autoplayonlyfirsttime="false"
+         data-nextslideatend="true"
+         data-dottedoverlay="darkoverlay"></div>
               <div class="tp-caption light text-center"
-			data-x="center"
-			data-y="middle"
-			data-voffset="['-35','-35','-35','-30']"
-			data-fontsize="['55','55','45','30']"
-			data-lineheight="['65','65','55','45']"
-			data-width="['1100','980','700','450']"
-			data-textAlign="['center','center','center','center']"
-			data-whitespace="['normal','normal','normal','normal']"
-			data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.3;sY:1.3;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power2.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-			data-responsive="on"
-			data-responsive_offset="on"
-			style="z-index: 9;">ONLINE MARKETING</div>
+         data-x="center"
+         data-y="middle"
+         data-voffset="['-35','-35','-35','-30']"
+         data-fontsize="['55','55','45','30']"
+         data-lineheight="['65','65','55','45']"
+         data-width="['1100','980','700','450']"
+         data-textAlign="['center','center','center','center']"
+         data-whitespace="['normal','normal','normal','normal']"
+         data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.3;sY:1.3;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power2.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+         data-responsive="on"
+         data-responsive_offset="on"
+         style="z-index: 9;">ONLINE MARKETING</div>
               <div class="tp-caption light text-center"
-			data-x="center"
-			data-y="middle"
-			data-voffset="['35','35','35','30']"
-			data-fontsize="['55','55','45','30']"
-			data-lineheight="['65','65','55','45']"
-			data-width="['1100','980','700','450']"
-			data-textAlign="['center','center','center','center']"
-			data-whitespace="['normal','normal','normal','normal']"
-			data-frames='[{"delay":1500,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.3;sY:1.3;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power2.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-			data-responsive="on"
-			data-responsive_offset="on"
-			style="z-index: 9;">One-Click Call & Navigation</div>
+         data-x="center"
+         data-y="middle"
+         data-voffset="['35','35','35','30']"
+         data-fontsize="['55','55','45','30']"
+         data-lineheight="['65','65','55','45']"
+         data-width="['1100','980','700','450']"
+         data-textAlign="['center','center','center','center']"
+         data-whitespace="['normal','normal','normal','normal']"
+         data-frames='[{"delay":1500,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.3;sY:1.3;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power2.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+         data-responsive="on"
+         data-responsive_offset="on"
+         style="z-index: 9;">One-Click Call & Navigation</div>
             </li>
 
-            <li data-transition="parallaxtobottom"><img src="style/video/office.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina="" />
-              <div class="rs-background-video-layer"
-          data-forcerewind="on"
-        data-volume="mute"
-      data-videowidth="100%"
-      data-videoheight="100%"
-      data-videomp4="style/video/office.mp4"
-      data-videopreload="preload"
-      data-videoloop="none"
-      data-forcecover="1"
-      data-aspectratio="16:9"
-      data-autoplay="true"
-      data-autoplayonlyfirsttime="false"
-      data-nextslideatend="true"
-      data-dottedoverlay="darkoverlay"></div>
+           
+
+
+            <li data-transition="parallaxtoleft"><img src="img/marketing.jpeg" alt="" />
               <div class="tp-caption light text-center"
-      data-x="center"
-      data-y="middle"
-      data-voffset="['-35','-35','-35','-30']"
-      data-fontsize="['55','55','45','30']"
-      data-lineheight="['65','65','55','45']"
-      data-width="['1100','980','700','450']"
-      data-textAlign="['center','center','center','center']"
-      data-whitespace="['normal','normal','normal','normal']"
-      data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.3;sY:1.3;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power2.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-      data-responsive="on"
-      data-responsive_offset="on"
-      style="z-index: 9;">ONLINE MARKETING</div>
+         data-x="center"
+         data-y="middle"
+         data-voffset="['-35','-35','-35','-30']"
+         data-fontsize="['55','55','45','30']"
+         data-lineheight="['65','65','55','45']"
+         data-width="['1100','980','700','450']"
+         data-textAlign="['center','center','center','center']"
+         data-whitespace="['normal','normal','normal','normal']"
+         data-frames='[{"from":"x:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":1000,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+         data-responsive="on"
+         data-responsive_offset="on"
+         style="z-index: 9;">ONLINE MARKETING</div>
               <div class="tp-caption light text-center"
-      data-x="center"
-      data-y="middle"
-      data-voffset="['35','35','35','30']"
-      data-fontsize="['55','55','45','30']"
-      data-lineheight="['65','65','55','45']"
-      data-width="['1100','980','700','450']"
-      data-textAlign="['center','center','center','center']"
-      data-whitespace="['normal','normal','normal','normal']"
-      data-frames='[{"delay":1500,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.3;sY:1.3;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power2.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-      data-responsive="on"
-      data-responsive_offset="on"
-      style="z-index: 9;">Utilizing 100% of Your Social Marketing Potential</div>
+         data-x="center"
+         data-y="middle"
+         data-voffset="['35','35','35','30']"
+         data-fontsize="['55','55','45','30']"
+         data-lineheight="['65','65','55','45']"
+         data-width="['1100','980','700','450']"
+         data-textAlign="['center','center','center','center']"
+         data-whitespace="['normal','normal','normal','normal']"
+         data-frames='[{"from":"x:50px;opacity:0;","speed":1000,"to":"o:1;","delay":1500,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+         data-responsive="on"
+         data-responsive_offset="on"
+         style="z-index: 9;"> Utilizing 100% of <br>Your Social Marketing Potential</div>
             </li>
 
-            <li data-transition="parallaxtoleft"><img src="style/images/art/slider-bg2.jpg" alt="" />
+            <li data-transition="parallaxtoleft"><img src="img/youtube.png" alt="" />
               <div class="tp-caption light text-center"
-			data-x="center"
-			data-y="middle"
-			data-voffset="['-35','-35','-35','-30']"
-			data-fontsize="['55','55','45','30']"
-			data-lineheight="['65','65','55','45']"
-			data-width="['1100','980','700','450']"
-			data-textAlign="['center','center','center','center']"
-			data-whitespace="['normal','normal','normal','normal']"
-			data-frames='[{"from":"x:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":1000,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
-			data-responsive="on"
-			data-responsive_offset="on"
-			style="z-index: 9;">ONLINE MARKETING</div>
+            data-x="center"
+            data-y="middle"
+            data-voffset="['-35','-35','-35','-30']"
+            data-fontsize="['55','55','45','30']"
+            data-lineheight="['65','65','55','45']"
+            data-width="['1100','980','700','450']"
+            data-textAlign="['center','center','center','center']"
+            data-whitespace="['normal','normal','normal','normal']"
+            data-frames='[{"from":"x:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":1000,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+            data-responsive="on"
+            data-responsive_offset="on"
+            style="z-index: 9; ">ONLINE MARKETING</div>
               <div class="tp-caption light text-center"
-			data-x="center"
-			data-y="middle"
-			data-voffset="['35','35','35','30']"
-			data-fontsize="['55','55','45','30']"
-			data-lineheight="['65','65','55','45']"
-			data-width="['1100','980','700','450']"
-			data-textAlign="['center','center','center','center']"
-			data-whitespace="['normal','normal','normal','normal']"
-			data-frames='[{"from":"x:50px;opacity:0;","speed":1000,"to":"o:1;","delay":1500,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
-			data-responsive="on"
-			data-responsive_offset="on"
-			style="z-index: 9;">YouTube Video Advertising</div>
+            data-x="center"
+            data-y="middle"
+            data-voffset="['35','35','35','30']"
+            data-fontsize="['55','55','45','30']"
+            data-lineheight="['65','65','55','45']"
+            data-width="['1100','980','700','450']"
+            data-textAlign="['center','center','center','center']"
+            data-whitespace="['normal','normal','normal','normal']"
+            data-frames='[{"from":"x:50px;opacity:0;","speed":1000,"to":"o:1;","delay":1500,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+            data-responsive="on"
+            data-responsive_offset="on"
+            style="z-index: 9; ">YouTube Video Advertising</div>
             </li>
-
 
 
           </ul>
@@ -266,13 +372,15 @@
     <!-- /.light-wrapper -->
   </section>
   <!-- /#home -->
-  <section id="services">
+ <section id="services">
     <div class="light-wrapper">
       <div class="container inner">
         <h2 class="section-title text-center">We Specialize in<strong><br> ONLINE MARKETING</strong></br></h2>
         <div class="space30"></div>
-        <div class="row gutter60 text-center">
+
+
           <div class="col-sm-6 col-md-6"> <span class="icon icon-bg mb-20"><i class="budicon-image"></i></span>
+              <div class="row gutter60 text-center">
             <h4 class="upper">Web Design & Web Development</h4>
             <div style="text-align:left">
             <p>We build beautiful, immersive, feature-rich websites that are as engaging as they are easy to navigate. With experience developing corporate websites, online shops (e-commerce websites), local business websites, lead-generating sites and blogs, our talented team based designers and developers will build you a beautiful site.</p></div>
@@ -287,7 +395,8 @@
           </div>
         </div>
           <!--/column -->
-          <div class="space20 visible-sm clearfix"></div>
+
+
           <div class="col-sm-6 col-md-6"> <span class="icon icon-bg mb-20"><i class="budicon-tv-1"></i></span>
             <div class="row gutter60 text-center">
             <h4 class="upper">Digital Marketing & Social Media Management</h4></div>
@@ -300,10 +409,17 @@
           <div class="col-sm-6 col-md-6"> <span class="icon icon-bg mb-20"><i class="budicon-mobile"></i></span>
             <div class="row gutter60 text-center">
             <h4 class="upper">IT-Consulting</h4></div>
+            <div class="col-sm-24 col-md-24">
             <div style="text-align:left">
-            <p><br>-Network infrastructure&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  -Server & Network Management</br>
-               <br>-Help Desk Network Outsourcing&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   -POS & Security System</br>
-               <br>-Bitcoin Blockchain</br>
+
+              <ul class="unordered-list">
+                <li>Network infrastructure</li>
+                <li>Server & Network Management</li>
+                <li>Help Desk Network Outsourcing</li>
+                <li>POS & Security System</li>
+                <li>Bitcoin Blockchain</li>
+              </div>
+              </ul>
             </p>
           </div>
           </div>
@@ -375,14 +491,127 @@
   </section>
   <!-- /#services-->
 
+  <section id="portfolio">
+    <div class="light-wrapper">
+      <div class="container inner">
+        <h2 class="section-title text-center">Portfolio</h2>
+        <p class="lead text-center">User must LOG IN LOG OUT to see this page (phpmailer & recaptcha)</p>
+        <div class="space20"></div>
+        <div id="js-single-filter" class="cbp-filter-container text-center">
+          <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">All</div>
+          <div data-filter=".poster" class="cbp-filter-item">System</div>
+          <div data-filter=".package" class="cbp-filter-item">Software</div>
+          <div data-filter=".identity" class="cbp-filter-item">Web Language</div>
+          <div data-filter=".video" class="cbp-filter-item">My Sql</div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="space20"></div>
+        <div id="js-grid-single" class="cbp cbp-l-grid-inline light-gallery">
+          <div class="cbp-item package identity"> <a href="#" class="cbp-caption cbp-singlePage">
+            <div class="cbp-caption-defaultWrap"> <img src="blog/images/1.jpg" alt=""> </div>
+            <div class="cbp-caption-activeWrap">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <p>IT solution</p>
+                </div>
+              </div>
+            </div>
+            </a> </div>
+          <div class="cbp-item poster"> <a href="#" class="cbp-caption cbp-singlePage">
+            <div class="cbp-caption-defaultWrap"> <img src="blog/images/2.png" alt=""> </div>
+            <div class="cbp-caption-activeWrap">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <p>Email</p>
+                </div>
+              </div>
+            </div>
+            </a> </div>
+          <div class="cbp-item poster video"> <a href="#" class="cbp-caption cbp-singlePage">
+            <div class="cbp-caption-defaultWrap"> <img src="blog/images/3.png" alt=""> </div>
+            <div class="cbp-caption-activeWrap">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <p>Cloud</p>
+                </div>
+              </div>
+            </div>
+            </a> </div>
+          <div class="cbp-item package identity"> <a href="#" class="cbp-caption cbp-singlePage">
+            <div class="cbp-caption-defaultWrap"> <img src="blog/images/4.png" alt=""> </div>
+            <div class="cbp-caption-activeWrap">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <p>Cloud system</p>
+                </div>
+              </div>
+            </div>
+            </a> </div>
+          <div class="cbp-item identity"> <a href="#" class="cbp-caption cbp-singlePage">
+            <div class="cbp-caption-defaultWrap"> <img src="blog/images/5.png" alt=""> </div>
+            <div class="cbp-caption-activeWrap">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <p>Green IT</p>
+                </div>
+              </div>
+            </div>
+            </a> </div>
+          <div class="cbp-item poster"> <a href="#" class="cbp-caption cbp-singlePage">
+            <div class="cbp-caption-defaultWrap"> <img src="blog/images/6.png" alt=""> </div>
+            <div class="cbp-caption-activeWrap">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <p>CSS</p>
+                </div>
+              </div>
+            </div>
+            </a> </div>
+          <div class="cbp-item identity"> <a href="#" class="cbp-caption cbp-singlePage">
+            <div class="cbp-caption-defaultWrap"> <img src="blog/images/7.png" alt=""> </div>
+            <div class="cbp-caption-activeWrap">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <p>HTML</p>
+                </div>
+              </div>
+            </div>
+            </a> </div>
+          <div class="cbp-item package identity"> <a href="#" class="cbp-caption cbp-singlePage">
+            <div class="cbp-caption-defaultWrap"> <img src="blog/images/8.png" alt=""> </div>
+            <div class="cbp-caption-activeWrap">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <p>Java script</p>
+                </div>
+              </div>
+            </div>
+            </a> </div>
+          <div class="cbp-item poster"> <a href="#" class="cbp-caption cbp-singlePage">
+            <div class="cbp-caption-defaultWrap"> <img src="blog/images/9.png" alt=""> </div>
+            <div class="cbp-caption-activeWrap">
+              <div class="cbp-l-caption-alignCenter">
+                <div class="cbp-l-caption-body">
+                  <p>PHP</p>
+                </div>
+              </div>
+            </div>
+            </a> </div>
+        </div>
+        <div class="space30"></div>
+        <div id="js-single-more" class="text-center"> <a href="ajax/loadmore.html" class="cbp-l-loadMore-link btn" rel="nofollow"> <span class="cbp-l-loadMore-defaultText">LOAD MORE</span> <span class="cbp-l-loadMore-loadingText">LOADING...</span> <span class="cbp-l-loadMore-noMoreLoading">NO MORE WORKS</span> </a> </div>
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.light-wrapper -->
 
     <div class="inverse-wrapper">
       <div class="container inner">
         <div class="row">
           <div class="col-sm-3">
-            <h3>Instagram Feed</h3>
-            <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet.</p>
-            <a href="https://instagram.com/urbanshots/" class="btn btn-white">Instagram Page</a> </div>
+            <h3>SEO WEBSITE EXAMPLE</h3>
+            <p>We are a team of experienced programmers and designers in the New York metropolitan area. We believe that great design and functionality is the basis for successful IT consulting. Our goal is to provide web-based solutions that look professional and are easy to use. We understand that every business has its own unique needs and challenges.</p>
+            <a href="https://instagram.com/urbanshots/" class="btn btn-white">View More</a> </div>
           <div class="col-sm-9">
             <div class="tiles tiles-s instagram">
               <div id="instafeed" class="items row row-offset-0"></div>
@@ -407,7 +636,7 @@
         <div class="space20"></div>
         <div class="row">
           <div class="col-md-6">
-            <figure><img src="style/images/art/about.jpg" alt="" /></figure>
+            <figure><img src="img/m.jpg" alt="" /></figure>
           </div>
           <!-- /column -->
           <div class="space30 hidden-xs hidden-md hidden-lg"></div>
@@ -718,19 +947,22 @@
       <div class="col-sm-6 col-md-4">
         <img src="img/e.png" width="300px" height="150px">
         <h4 class="upper">Cross Browser Testing</h4>
-        <p>HTML, CSS, and JavaScript may behave differently on different browsers. Cross browser testing ensures a consistent and error-free user experience.</p>
+        <div style="text-align:left">
+        <p>HTML, CSS, and JavaScript may behave differently on different browsers. Cross browser testing ensures a consistent and error-free user experience.</p></div>
       </div>
       <!--/column -->
       <div class="col-sm-6 col-md-4">
         <img src="img/f.png" width="300px" height="150px">
         <h4 class="upper">Responsive Compatibility</h4>
-        <p>Fluid layout that automatically resizes to its screen. We test on Iphones, Android phones, Ipads, and most popular devices to maximize compatibility.</p>
+        <div style="text-align:left">
+        <p>Fluid layout that automatically resizes to its screen. We test on Iphones, Android phones, Ipads, and most popular devices to maximize compatibility.</p></div>
       </div>
       <!--/column -->
       <div class="space20 visible-sm clearfix"></div>
       <div class="col-sm-6 col-md-4">
         <img src="img/g.png" width="300px" height="150px">
         <h4 class="upper">Extremely Fast Websites</h4>
+        <div style="text-align:left">
         <p>Speed matters. Our websites are faster than 90% of all tested websites.</p>
         <ul class="unordered-list">
           <li>Combined JS & CSS</li>
@@ -740,13 +972,15 @@
           <li>Minimized Request Sizes</li>
           <li>GZip Compression</li>
         </ul>
+      </div>
         </div>
       <!--/column -->
       <div class="space20 hidden-xs hidden-sm clearfix"></div>
       <div class="col-sm-6 col-md-4">
         <img src="img/h.jpg" width="300px" height="150px">
         <h4 class="upper">Code Validation</h4>
-        <div style="text-align:left"
+        <div style="text-align:left">
+
         <p>W3C markup validation is a form of quality control that assures proper code standards and aids in future proofing.</p>
       </div>
       </div>
@@ -755,7 +989,9 @@
       <div class="col-sm-6 col-md-4">
         <img src="img/i.png" width="300px" height="150px">
         <h4 class="upper">Search Engine Optimization</h4>
+        <div style="text-align:left">
         <p>Onsite SEO best practices for improved searchability.</p>
+
         <ul class="unordered-list">
           <li>Sitemap</li>
           <li>Meta Descriptions</li>
@@ -766,14 +1002,17 @@
           <li>Heading</li>
           <li>Status Codes</li>
         </ul>
+
+      </div>
       </div>
       <!--/column -->
 
       <div class="col-sm-6 col-md-4">
         <img src="img/k.png" width="300px" height="150px">
         <h4 class="upper">Analytics Integration</h4>
+        <div style="text-align:left">
         <p>We properly configure Google Analytics for visitor tracking, demographic statistics, and goal conversions.</p>
-      </div>
+      </div></div>
       <!--/column -->
 
     </div>
@@ -782,6 +1021,7 @@
   </div>
   <!-- /.container -->
 </div>
+
 
 
 
@@ -945,31 +1185,9 @@
         <div class="col-sm-12">
           <h3>Clients</h3>
               </div>
-          <div class="col-sm-4">
-            <figure>  <img src="img/1.png" alt="ecommerce"/></figure>
-         </div>
-         <div class="col-sm-4">
-           <figure>  <img src="img/2.png" alt="ecommerce"/></figure>
-        </div>
-        <div class="col-sm-3">
-          <figure>  <img src="img/5.png" alt="ecommerce"/></figure>
-       </div>
-       <div class="col-sm-4">
-         <figure>  <img src="img/3.png" alt="ecommerce"/></figure>
-      </div>
-      <div class="col-sm-4">
-        <figure>  <img src="img/4.png" alt="ecommerce"/></figure>
-     </div>
-     <div class="col-sm-3">
-       <figure>  <img src="img/6.png" alt="ecommerce"/></figure>
-    </div>
+          <div class="col-sm-12">
 
-
-
-        <div class="col-sm-4.8">
-          <figure>  <img src="img/p.jpg" alt="ecommerce"/></figure>
-       </div>
-
+              <img src="img/z.png" alt="ecommerce" width="400px" height="600px" />
             </div>
             </div>
             </div>
@@ -1004,15 +1222,10 @@
 
   <!-- /#about -->
   <section id="contact">
-    <div class="dark-wrapper">
-    <div class="container inner">
 
-      <div class="col-sm-12">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12067.65524953394!2d-73.9523471!3d40.8737656!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xeef34a8d6c0c544e!2sSEO+NY+NJ-Boranet+Inc!5e0!3m2!1sen!2sus!4v1533847128404" width="1200" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-  </div>
-</div>
-</div>
-    <div class="light-wrapper">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3016.920949432293!2d-73.95609858421243!3d40.87360897931472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f14bf73c6883%3A0x7072335791b13a03!2s330+Sylvan+Ave%2C+Englewood+Cliffs%2C+NJ+07632!5e0!3m2!1sen!2sus!4v1533913596118" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+   
+  <div class="light-wrapper">
       <div class="container inner pb-60">
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
@@ -1031,7 +1244,7 @@
             </ul>
             <div class="space30"></div>
             <div class="form-container">
-              <form action="contact/vanilla-form.php" method="post" class="vanilla vanilla-form" novalidate>
+              <form name="contactform" action="contact-form-handler.php" method="post">
                 <div class="row">
                   <div class="col-sm-6 pr-10">
                     <div class="form-field">
@@ -1063,7 +1276,7 @@
                   <div class="col-sm-6 pl-10">
                     <div class="form-field">
                       <label>Phone
-                        <input type="tel" name="tel">
+                        <input type="tel" name="phone">
                       </label>
                     </div>
                     <!--/.form-field -->
@@ -1075,8 +1288,16 @@
                       <label>Message*
                         <textarea name="message" required></textarea>
                       </label>
+                      <div class="col-md-6 text-center">
+
+
+
+                                  <input type="text" id="captcha" name="captcha">
+
+                                </div>
+
                       <div class="text-center">
-                        <input type="submit" class="btn" value="Send Message" data-error="Fix errors" data-processing="Sending..." data-success="Thank you!">
+                        <input id="submitted" type="submit" class="btn" name="submit">
                       </div>
                       <footer class="notification-box"></footer>
                     </div>
@@ -1106,6 +1327,7 @@
   <!-- /#contact -->
 </div>
 <!-- /.content-wrapper -->
+<f
 <footer class="inverse-wrapper">
   <div class="sub-footer">
     <div class="container inner">
@@ -1141,5 +1363,52 @@
 <script type="text/javascript" src="style/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
 <script type="text/javascript" src="style/js/plugins.js"></script>
 <script type="text/javascript" src="style/js/scripts.js"></script>
+
+
+
+   <script type="text/javascript">
+             $(document).ready(function() {
+             $("#submitted").attr('disabled','disabled');
+             initCaptcha();
+
+             setInterval(function() {
+               initCaptcha();
+             }, 10000);
+            });
+
+            function initCaptcha() {
+             var captcha = generateCaptcha(),
+               captchaAns = eval(captcha);
+
+             $("#captcha")
+               .attr("placeholder", captcha+" = ")
+               .on("keyup", function() {
+                 if ($(this).val() !== "" && $(this).val() == captchaAns)
+                 {$(this).addClass("correct");
+                 $("#submitted").removeAttr('disabled');
+
+               }
+
+                 else{
+                     $(this).removeClass("correct");
+                     $("#submitted").attr('disabled','disabled');
+
+                 }
+
+               });
+            }
+
+            function generateCaptcha() {
+             var randomNo = function(n) {
+               return Math.floor(Math.random()*n + 1);
+             }
+
+             var randomOp = function() {
+               return "+-*"[randomNo(3)-1];
+             }
+             return randomNo(10)+" "+randomOp()+" "+randomNo(10);
+            }
+            </script>
+
 </body>
 </html>
